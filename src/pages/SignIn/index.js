@@ -31,5 +31,5 @@ const styles = StyleSheet.create({
         paddingVertical : 26,
         marginTop: 24,
         flex : 1
-    }
+    },
 });
