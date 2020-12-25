@@ -1,4 +1,4 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {StyleSheet, Text, View, Dimensions, Image} from 'react-native';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
@@ -36,42 +36,132 @@ const renderTabBar = (props) => (
 );
 
 const NewTaste = () => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   return (
-    <View style={{paddingTop: 8, paddingHorizontal : 24 }}>
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy1} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy2} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy3} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy1} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy2} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy3} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy} />
+    <View style={{paddingTop: 8, paddingHorizontal: 24}}>
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy1}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy2}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy3}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy1}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy2}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy3}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy}
+      />
     </View>
   );
 };
 
 const Popular = () => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
 
   return (
-    <View style={{paddingTop: 8, paddingHorizontal : 24 }}>
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy3} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy} />
+    <View style={{paddingTop: 8, paddingHorizontal: 24}}>
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy3}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy}
+      />
     </View>
   );
 };
 
 const Recommended = () => {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
 
   return (
-    <View style={{paddingTop: 8, paddingHorizontal : 24 }}>
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy3} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy2} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy1} />
-      <ItemListFood onPress={() => navigation.navigate('FoodDetail')} image={foodDummy} />
+    <View style={{paddingTop: 8, paddingHorizontal: 24}}>
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy3}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy2}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy1}
+      />
+      <ItemListFood
+      type="product"
+      name="Sop Bumil"
+      price="380.000"
+        onPress={() => navigation.navigate('FoodDetail')}
+        image={foodDummy}
+      />
     </View>
   );
 };
@@ -99,7 +189,7 @@ const HomeTabSection = () => {
       renderScene={renderScene}
       onIndexChange={setIndex}
       initialLayout={initialLayout}
-      style={{backgroundColor : '#FFF'}}
+      style={{backgroundColor: '#FFF'}}
     />
   );
 };
